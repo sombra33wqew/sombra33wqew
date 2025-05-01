@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Guildas FF – PT & BR</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #1c1c1c, #2a2a2a);
+      color: white;
+    }
+    header {
+      background-color: #ff4444;
+      padding: 1em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    section {
+      padding: 2em;
+    }
+    .guildas {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .guilda {
+      background: #333;
+      padding: 1em;
+      margin: 1em;
+      border-radius: 12px;
+      width: 300px;
+    }
+    .campeonatos, .patrocinios {
+      margin-top: 2em;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+      margin-top: 2em;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      border-radius: 6px;
+      border: none;
+    }
+    .formulario {
+      background: #222;
+      padding: 1em;
+      border-radius: 10px;
+      margin-top: 2em;
+    }
+    .tabela-campeonatos {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2em;
+    }
+    .tabela-campeonatos th, .tabela-campeonatos td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+    .tabela-campeonatos th {
+      background-color: #ff4444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Guildas FF – PT & BR</h1>
+    <p>By Sombra | Contacto: deadjotebpull@gmail.com</p>
+  </header>
+
+  <section>
+    <h2>Guildas em Destaque</h2>
+    <div class="guildas">
+      <div class="guilda">
+        <h3>Guilda Lendária PT</h3>
+        <p>Top 1 Portugal - Vencedora dos últimos 3 torneios.</p>
+      </div>
+      <div class="guilda">
+        <h3>Guilda Fúria BR</h3>
+        <p>Top 1 Brasil - Domínio absoluto nos minitorneios BR.</p>
+      </div>
+    </div>
+
+    <div class="campeonatos">
+      <h2>Mini Campeonatos</h2>
+      <table class="tabela-campeonatos">
+        <thead>
+          <tr>
+            <th>Campeonato</th>
+            <th>Data</th>
+            <th>Prémios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Relâmpago PT</td>
+            <td>10 de Maio 2025</td>
+            <td>1º - 100€, 2º - 50€, 3º - 25€</td>
+          </tr>
+          <tr>
+            <td>Campeonato BRXtreme</td>
+            <td>17 de Maio 2025</td>
+            <td>1º - 500R$, 2º - 250R$, 3º - 100R$</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="formulario">
+      <h2>Inscreve-te!</h2>
+      <form>
+        <label>Nome da Guilda</label>
+        <input type="text" required>
+        <label>Email de contacto</label>
+        <input type="email" required>
+        <label>Comentário ou descrição</label>
+        <textarea rows="4"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div class="patrocinios">
+      <h2>Patrocínios</h2>
+      <p>Quer apoiar o projeto? Patrocínio básico a partir de apenas <strong>5€</strong>. Terá o seu nome e logo visível no site durante os campeonatos.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Top Guildas FF – Desenvolvido por Sombra</p>
+  </footer>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Inscrição enviada com sucesso! Entraremos em contacto via email.');
+    });
+  </script>
+</body>
+</html>
+
+    
